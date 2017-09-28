@@ -13,6 +13,12 @@ attr_reader :name
     self.balance += amount
   end
 
+  def display_balance
+    self.balance
+  end
+
   
+
+
 
 end
