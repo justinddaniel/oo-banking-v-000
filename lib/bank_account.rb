@@ -17,8 +17,4 @@ attr_reader :name
     self.balance
   end
 
-  
-
-
-
 end
