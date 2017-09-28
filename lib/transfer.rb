@@ -29,7 +29,8 @@ attr_reader :sender, :receiver, :amount
     if self.status == "complete"
       sender.balance += self.amount
       receiver.balance -= self.amount
-    else 
+      self.status = "reversed"
+    else
       "unable to comply"
     end
   end
