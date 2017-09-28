@@ -1,10 +1,10 @@
 class Transfer
 
-attr_reader :sender, :name2, :amount
+attr_reader :sender, :receiver, :amount
 
-  def initialize(sender, name2, amount)
+  def initialize(sender, receiver, amount)
     @sender = sender
-    @name2 = name2
+    @receiver = receiver
     @amount = amount
   end
 
