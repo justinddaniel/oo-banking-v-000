@@ -25,4 +25,13 @@ attr_reader :sender, :receiver, :amount
     end
   end
 
+  def reverse_transfer
+    if self.status == "complete"
+      sender.balance += self.amount
+      receiver.balance -= self.amount
+    else 
+      "unable to comply"
+    end
+  end
+
 end
