@@ -16,6 +16,7 @@ attr_reader :sender, :receiver, :amount
 
   def execute_transaction
     if self.valid? == false || self.status == "complete" || self.amount > sender.balance
+      self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     else
       sender.balance -= self.amount
