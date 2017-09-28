@@ -18,4 +18,8 @@ attr_reader :name
     "Your balance is $#{money}."
   end
 
+  def valid?
+    self.status == "open" && self.balance > 0
+  end
+
 end
