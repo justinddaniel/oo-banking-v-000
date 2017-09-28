@@ -24,6 +24,5 @@ attr_reader :sender, :receiver, :amount
       self.status = "complete"
     end
   end
-      
-      
+
 end
