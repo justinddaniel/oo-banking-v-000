@@ -9,4 +9,10 @@ attr_reader :name
     @status = "open"
   end
 
+  def deposit(amount)
+    self.balance += amount
+  end
+
+  
+
 end
